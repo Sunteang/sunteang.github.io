@@ -1,0 +1,35 @@
+html {
+  background-color: rgb(247, 239, 239);
+}
+.body-1 {
+  background-color: rgb(243, 235, 235);
+  padding: 10px;
+  border-radius: 10px;
+}
+h1 {
+  color: green;
+  text-align: center;
+}
+.p1 {
+  color: green;
+}
+
+.second-h2 {
+  color: blue;
+}
+.third-h2 {
+  color: red;
+}
+.forth-h2 {
+  color: rgb(255, 132, 0);
+}
+.cost-class {
+  width: 635px;
+  height: 350px;
+}
+.uc-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
