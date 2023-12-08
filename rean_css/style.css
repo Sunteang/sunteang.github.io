@@ -1,4 +1,16 @@
-p {
-  font-family: "Courier New", Courier, monospace;
-  color: rgb(255, 3, 24);
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+.top {
+  text-decoration: underline;
+}
+.no {
+  text-align: center;
+}
+.th-bc {
+  background-color: black;
 }
