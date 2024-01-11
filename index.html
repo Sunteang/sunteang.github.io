@@ -1,47 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ITE103K:HTML & CSS</title>
-    <link rel="icon" type="image/x-icon" href="images/cost_pf.jpg" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- got all that link form ' google fonts ' -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <img class="banner" src="images/cost_banner.jpg" alt="banner" />
-
-    <div class="body-1">
-      <a href="https://cost.uc.edu.kh/" target="_blank">
-        <img class="uc-logo" src="images/uc_logo.png" />
-      </a>
-      <h1>College Science and Technology</h1>
-
-      <p class="p1">
-        The University of Cambodia was established. It was officially opened by
-        Prime Minister Samdech Techo Hun Sen on 23 June 2003. Originally located
-        in three leased buildings just south of the Independence Monument, today
-        the University is firmly established on over 3 hectares of land in the
-        middle of Phnom Penh
-      </p>
-
-      <img class="cost-class" src="images/cost_5.jpg" alt="" />
-      <img class="cost-class" src="images/cost_6.jpg" alt="" />
+    <!-- main=div , section = div -->
+    <div class="main-content">
+      <div class="left-side">
+        <div class="left-content">
+          <div class="profile">
+            <img src="/myprofile3.jpg" alt="myprofile" />
+            <h2 class="name">SEREY SUNTEANG</h2>
+            <p class="career">Web Developer</p>
+          </div>
+          <div class="contact-info">
+            <h3 class="main-title">Contact Info</h3>
+            <ul>
+              <li>
+                <i class="fa fa-phone"> </i>
+                098 255 128
+              </li>
+              <li>
+                <i class="fa fa-envelope-open"> </i>
+                sereysunteang@gmail.com
+              </li>
+              <li>
+                <i class="fa fa-linkedin-square"> </i>
+                Sunteang SEREY
+              </li>
+              <li>
+                <i class="fa fa-map-marker"> </i>
+                B12 Prey Thom, Prey Sar
+              </li>
+            </ul>
+          </div>
+          <div class="skills-section">
+            <h3 class="main-title">Skills</h3>
+            <ul>
+              <li>
+                <p class="skill-title">Html</p>
+                <div class="progress-bar">
+                  <div class="progress html-progress"></div>
+                </div>
+              </li>
+              <li>
+                <p class="skill-title">Css</p>
+                <div class="progress-bar">
+                  <div class="progress css-progress"></div>
+                </div>
+              </li>
+              <li>
+                <p class="skill-title">Javascript</p>
+                <div class="progress-bar">
+                  <div class="progress js-progress"></div>
+                </div>
+              </li>
+              <li>
+                <p class="skill-title">Python</p>
+                <div class="progress-bar">
+                  <div class="progress py-progress"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="references-section">
+            <h3 class="main-title">References</h3>
+            <div class="referee">
+              <h6 class="sub-title">Vichhaiy Serey</h6>
+              <p class="sub-para">DevSecOps Team Lead</p>
+              <ul>
+                <li>
+                  <i class="fa fa-phone"> </i>
+                  +85515370170 (Mobile)
+                </li>
+                <li>
+                  <i class="fa fa-envelope-open"> </i>
+                  vichhaiyserey@gmail.com
+                </li>
+              </ul>
+            </div>
+            <div class="referee">
+              <h6 class="sub-title">Richhat Serey</h6>
+              <p class="sub-para">Senior Web Developer</p>
+              <ul>
+                <li>
+                  <i class="fa fa-phone"> </i>
+                  +85581437170 (Mobile)
+                </li>
+                <li>
+                  <i class="fa fa-envelope-open"> </i>
+                  richhatserey@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="right-main-content">
+          <section class="about sect">
+            <h2 class="right-title">About Me</h2>
+            <p class="para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              quis , modi aperiam amet? necessitatibus veniam? Repellendus modi
+              corporis fuga quibusdam est sint eaque?m10<br /><br />
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam,
+              dolores pariatur. Debitis fuga, quisquam perferendis molestiae
+              placeat laboriosam vero sit .
+            </p>
+          </section>
+          <section class="experience sect">
+            <h2 class="right-title">Experience</h2>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">Google</h5>
+                <p class="para">2021 - 2022</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">IT Support</h5>
+                  <p class="para">
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem
+                    ipsum dolor sit amet. lorem5
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">Microsoft</h5>
+                <p class="para">2022 - 2023</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">Web Developer - Intern</h5>
+                  <p class="para">
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem
+                    ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">Apple</h5>
+                <p class="para">2022 - Present</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">Web Developer - Intern</h5>
+                  <p class="para">
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem
+                    ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="education sect">
+            <h2 class="right-title">Education</h2>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">Cisco/Skill-For-All</h5>
+                <p class="para">2018 - 2020</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">Networking</h5>
+                  <p class="para">
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">The University Of Cambodia</h5>
+                <p class="para">2022 - Present</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">Computer Science</h5>
+                  <p class="para">
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">The University Of Cambodia</h5>
+                <p class="para">2022 - Present</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">Web Development</h5>
+                  <p class="para">
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="certificate sect">
+            <h2 class="right-title">Certificate</h2>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">Cisco</h5>
+                <p class="para">Jan 2018</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">Computer Hardware</h5>
+                  <p class="para">Lorem ipsum dolor sit amet Lorem ipsum</p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">Cisco</h5>
+                <p class="para">June 2019</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">Operating System</h5>
+                  <p class="para">Lorem ipsum dolor sit amet Lorem ipsum</p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">Cisco</h5>
+                <p class="para">Dec 2020</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">Python</h5>
+                  <p class="para">Lorem ipsum dolor sit amet Lorem ipsum</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </div>
-    <h2 class="second-h2">1. Information Technology</h2>
-    <p class="p2">IT is Information Technology</p>
-    <del>not Ice Tea or internation Toiled</del>
-    <h2 class="third-h2">2. Computer Science</h2>
-    <p class="p3">
-      Computer Science is understanding how and why technologies work, exploring
-      whether and how technology could solve real-life problems, investigating
-      procedures, creating solutions, and learning about computing systems,
-      programming, data, networks
-    </p>
-    <h2 class="forth-h2">3. Electronics and Telecommunication</h2>
-    <p class="p4">
-      Electronics and Telecommunication Engineeringequips students with a
-      rigorous understanding of basic science and engineering concepts so that
-      learners may acquire a full knowledge of computer architecture and
-      microprocessors, VLSI and embedded systems, electromagnetic field theory,
-      analog and digital
-    </p>
   </body>
 </html>
