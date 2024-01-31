@@ -2,8 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  list-style: none;
+  /* list-style: none; */
   font-family: "Nunito", sans-serif;
+  text-decoration: none;
 }
 body {
   background-color: lightblue;
@@ -32,8 +33,9 @@ body {
   padding: 2rem 3rem;
 }
 .profile {
+  padding-top: 2rem;
   width: 100%;
-  /* align-items: center; */
+  padding-bottom: 1rem;
   border-bottom: 1px solid #f7f7f7;
 }
 .profile img {
@@ -41,22 +43,7 @@ body {
   border-radius: 50%;
   border: 8px solid #002333;
 }
-.name {
-  font-size: 2.5em;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 1.2rem 0;
-}
-.career {
-  font-size: 1.2rem;
-  color: #94d9ea;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding-bottom: 1rem;
-}
+
 .main-title {
   font-size: 1.7rem;
   text-transform: uppercase;
@@ -71,7 +58,7 @@ body {
 }
 
 .contact-info ul li {
-  padding: 0.5rem 0;
+  padding: 0.7rem 0;
   display: flex;
   align-items: center;
   color: #c4c3c3;
@@ -81,51 +68,50 @@ body {
   font-size: 1.2rem;
   color: #0f94e1;
 }
-/* new comment border and padding bottom */
-.skills-section ul {
+.contact-info ul li a {
+  color: #c4c3c3;
+}
+
+/* language section */
+.language-section ul {
   padding-top: 2rem;
   border-bottom: 1px solid #f7f7f7;
+  padding-bottom: 2rem;
+  list-style-type: none;
+}
+.language-section ul li {
+  /* edit on display - check */
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  align-items: center;
+  padding: 0.6rem 0;
+}
+.language-title {
+  color: #f7f7f7;
+  font-size: 0.9rem;
+  padding-right: 1rem;
+}
+
+/* skill section */
+.skills-section ul {
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 .skills-section ul li {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* edit on display - check */
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
   align-items: center;
-  padding: 0.4rem 0;
-}
-.progress-bar {
-  width: 100%;
-  height: 0.4rem;
-  background-color: #2f81ed4b;
-  position: relative;
-  border-radius: 12px;
-}
-.progress {
-  height: 100%;
-  position: absolute;
-  left: 0;
-  background-color: #2d9cdb;
-  border-radius: 12px;
-}
-.html-progress {
-  width: 85%;
+  padding: 0.7rem 0;
 }
 
-.css-progress {
-  width: 80%;
-}
-
-.js-progress {
-  width: 40%;
-}
-
-.py-progress {
-  width: 45%;
+.skills-section ul li::marker {
+  color: #f7f7f7;
+  font-size: 1rem;
 }
 
 .skill-title {
-  text-transform: uppercase;
   color: #f7f7f7;
   font-size: 1rem;
   padding-right: 1rem;
@@ -143,20 +129,57 @@ body {
   padding: 0.4rem 0;
 }
 
-.references-section li {
-  color: #ccc;
-  padding: 0.2rem 0;
-}
-
-.references-section li i {
-  padding-right: 0.5rem;
-  font-size: 1.2rem;
-  color: #0f94e1;
-}
-
+/* Right side */
 .right-main-content {
   padding: 2rem 3rem;
 }
+/* cv section */
+.cv-title {
+  font-size: 3rem;
+  color: #4c4f50;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+/* identity secton */
+.name {
+  font-size: 2rem;
+  color: #001d2a;
+  letter-spacing: 1px;
+  padding: 1.2rem 0;
+}
+.major {
+  font-size: 1.1rem;
+  color: #718096;
+  letter-spacing: 2px;
+}
+.university {
+  font-size: 1.2rem;
+  color: #718096;
+  line-height: 0.6rem;
+  letter-spacing: 2px;
+  padding-bottom: 4rem;
+}
+
+.cp-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2f80ed;
+  padding-bottom: 1.2rem;
+  position: relative;
+}
+.cp-title::after {
+  top: 26%;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 0.2rem;
+  border-radius: 12px;
+  background-color: #ccc;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+/* old content is below */
 .right-title {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -175,32 +198,90 @@ body {
   right: 0;
   transform: translateY(-50%);
 }
+/* reference section */
+.references ul {
+  list-style-type: none;
+}
+.references li {
+  color: #718096;
+  padding: 0.2rem 0;
+}
+
+.references li i {
+  padding-right: 0.5rem;
+  font-size: 1.2rem;
+  color: #001d2a;
+}
+.references li a {
+  color: #718096;
+}
+.tl-rf-title {
+  line-height: 1.6rem;
+  color: #002333;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+.rf-para {
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #494c4d;
+}
 .para {
   line-height: 1.6rem;
-  color: #718096;
+  color: #002333;
   font-size: 1.1rem;
+  font-weight: bold;
 }
-.sect {
+.para-skill {
+  line-height: 1.6rem;
+  color: #404344;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.para-body {
+  line-height: 1.6rem;
+  color: #4c4f50;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+.right-tl-para {
+  line-height: 1.6rem;
+  color: #404344;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.para-certificate {
+  line-height: 1.6rem;
+  color: #002333;
+  font-weight: bold;
+  font-size: 1rem;
+}
+/* .sect {
   padding-bottom: 2rem;
-}
+} */
+/* timeline section */
 .timeline {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 .tl-title {
   letter-spacing: 1px;
-  font-size: 1.3rem;
-  color: #002333;
-  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #494c4d;
 }
 .tl-title-2 {
   letter-spacing: 1px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #2d9cdb;
   text-transform: uppercase;
 }
 .tl-content {
-  border-left: 1px solid #ccc;
+  text-align: end;
   padding-left: 2rem;
   position: relative;
   padding-bottom: 2rem;
