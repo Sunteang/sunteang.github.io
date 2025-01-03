@@ -4,11 +4,11 @@ import Image from 'next/image';
 
 export default function CV() {
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center py-12 px-4">
-      <div className="bg-white shadow-lg rounded-lg max-w-6xl w-full p-8">
+    <div className="min-h-screen bg-gray-300 flex items-center justify-center py-12 px-4">
+      <div className="bg-white shadow-lg rounded-lg max-w-6xl w-[80%] p-8">
         <div className="flex">
           {/* Left Section */}
-          <div className="w-1/3 pr-8 border-r border-gray-200">
+          <div className="w-1/3 pr-8 border-r border-gray-400">
             <div className="text-center mb-8">
               <Image
                 src={Profile}
